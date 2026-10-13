@@ -11,7 +11,6 @@ export default function ResumeList({ resumes, onAdd, onRead, onUpdate, onDelete 
   return (
     <section>
       <div
-        className="resume-list-grid"
         style={{
           display: 'flex',
           justifyContent: 'space-between',
@@ -41,7 +40,6 @@ export default function ResumeList({ resumes, onAdd, onRead, onUpdate, onDelete 
 
       {resumes.length === 0 ? (
         <div
-          className="resume-card-actions"
           style={{
             background: '#fff',
             borderRadius: '10px',
@@ -66,6 +64,7 @@ export default function ResumeList({ resumes, onAdd, onRead, onUpdate, onDelete 
         </div>
       ) : (
         <div
+          className="resume-list-grid"
           style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
@@ -88,6 +87,7 @@ export default function ResumeList({ resumes, onAdd, onRead, onUpdate, onDelete 
                 }}
               >
                 <div
+                  className="resume-card-actions"
                   style={{
                     height: '8px',
                     background: accentColor,

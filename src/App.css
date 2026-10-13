@@ -1,0 +1,176 @@
+.app-header {
+  min-height: 72px;
+}
+
+.app-main {
+  width: min(100%, 1600px);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.editor-layout > *,
+.resume-preview-container,
+.resume-form {
+  min-width: 0;
+}
+
+.resume-form input,
+.resume-form .quill,
+.resume-form .ql-container {
+  max-width: 100%;
+}
+
+.resume-form .ql-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.resume-form button,
+.preview-actions button,
+.app-header button,
+.resume-card-actions button {
+  min-height: 42px;
+}
+
+.resume-list-grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)) !important;
+}
+
+.resume-preview-sections {
+  min-width: 0;
+}
+
+.resume-preview-sections > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.resume-preview-sections p,
+.resume-preview-sections li {
+  overflow-wrap: anywhere;
+}
+
+.resume-preview-container .resume-preview {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .editor-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 20px !important;
+  }
+
+  .resume-preview-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    padding: 14px 16px !important;
+  }
+
+  .app-header h1 {
+    font-size: 21px !important;
+  }
+
+  .app-main {
+    padding: 14px !important;
+  }
+
+  .resume-form {
+    padding: 16px !important;
+  }
+
+  .resume-form .ql-toolbar {
+    padding: 6px !important;
+  }
+
+  .resume-form .ql-formats {
+    margin-right: 4px !important;
+  }
+
+  .preview-actions {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .preview-actions button {
+    padding: 10px !important;
+  }
+
+  .resume-preview-container .resume-preview {
+    padding: 18px !important;
+    border-radius: 10px !important;
+  }
+
+  .resume-preview-header {
+    align-items: flex-start !important;
+    gap: 14px !important;
+    margin-bottom: 20px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .resume-preview-header > div:first-child {
+    width: 64px !important;
+    height: 64px !important;
+    min-width: 64px !important;
+    font-size: 34px !important;
+  }
+
+  .resume-preview-header h1 {
+    font-size: clamp(20px, 6vw, 26px) !important;
+    overflow-wrap: anywhere;
+  }
+
+  .resume-preview-sections {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 0 !important;
+  }
+
+  .resume-preview-right-column {
+    border-left: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .resume-preview-sections h2 {
+    font-size: 18px !important;
+  }
+
+  .resume-preview-contact {
+    gap: 8px !important;
+    flex-direction: column;
+    overflow-wrap: anywhere;
+  }
+
+  .resume-card-actions {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .resume-card-actions button {
+    padding: 8px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .app-main {
+    padding: 10px !important;
+  }
+
+  .resume-form {
+    padding: 12px !important;
+  }
+
+  .resume-preview-container .resume-preview {
+    padding: 14px !important;
+  }
+
+  .preview-actions,
+  .resume-card-actions {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
