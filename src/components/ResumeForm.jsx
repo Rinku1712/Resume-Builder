@@ -90,6 +90,7 @@ export default function ResumeForm({ resume, onChange = () => {}, onSave, onCanc
 
   return (
     <section
+      className="resume-form"
       style={{
         background: '#fff',
         padding: '22px',

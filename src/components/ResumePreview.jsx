@@ -43,6 +43,7 @@ export default function ResumePreview({ resume }) {
     >
       {/* Header */}
       <div
+        className="resume-preview-header"
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -54,6 +55,7 @@ export default function ResumePreview({ resume }) {
       >
         {/* First letter instead of profile image */}
         <div
+          className="resume-preview-sections"
           style={{
             width: '100px',
             height: '100px',
@@ -80,6 +82,7 @@ export default function ResumePreview({ resume }) {
 
       {/* Two-column sections */}
       <div
+        className="resume-preview-right-column"
         style={{
           display: 'grid',
           gridTemplateColumns: '1fr 1fr',
@@ -109,6 +112,7 @@ export default function ResumePreview({ resume }) {
 
         {/* Right column */}
         <div
+          className="resume-preview-contact"
           style={{
             borderLeft: '1px solid #ddd',
             paddingLeft: '20px',

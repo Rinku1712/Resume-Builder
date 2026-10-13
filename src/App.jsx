@@ -141,6 +141,7 @@ export default function App() {
   return (
     <div style={containerStyle}>
       <header
+        className="app-header"
         style={{
           background: '#172033',
           color: '#fff',
@@ -168,7 +169,7 @@ export default function App() {
         )}
       </header>
 
-      <main style={{ padding: '24px' }}>
+      <main className="app-main" style={{ padding: '24px' }}>
         {page === 'list' ? (
           <ResumeList
             resumes={resumes}
@@ -205,6 +206,7 @@ export default function App() {
 
               <div>
                 <div
+                  className="preview-actions"
                   style={{
                     display: 'flex',
                     gap: '10px',
@@ -235,7 +237,7 @@ export default function App() {
                   </button>
                 </div>
 
-                <div ref={previewRef}>
+                <div className="resume-preview-container" ref={previewRef}>
                   <ResumePreview resume={selectedResume} />
                 </div>
               </div>
